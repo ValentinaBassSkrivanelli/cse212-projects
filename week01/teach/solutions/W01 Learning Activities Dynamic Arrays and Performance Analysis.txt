@@ -1,0 +1,52 @@
+
+1.
+static void DoSomething(int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    Console.WriteLine(n * n);
+  }
+
+  for (i = n; i > 0; i--)
+  {
+    Console.WriteLine(n * n * n);
+  }
+}
+
+// Answer = Two separate For = O(n)
+
+
+2. 
+static void DoSomethingElse(List<string> words)
+{
+  for (int i = 0; i < words.Count; i++)
+  {
+    for (int j = 0; j < words.Count; j++)
+    {
+      Console.WriteLine(".");
+    }
+  }
+}
+
+//Answer: Two nested For loops multiply, result = O(n²)
+
+
+3.
+static void DoAnotherThing(List<string> words)
+{
+  string sentence = "The quick brown fox jumps over the lazy dog";
+  for (int i = 0; i < words.Count; i++)
+  {
+    for (int j = 0; j < sentence.Length; j++)
+    {
+      Console.WriteLine(".");
+    }
+  }
+}
+//Answer: The first `for` loop, which depends on `n`, is O(n)
+but the second `for` loop, `sentence.Length`, is constant and does not depend on `n`
+
+therefore, O(n) * O(1) = O(n)
+
+In this case, it does not depend on whether they are nested for loops.
+
