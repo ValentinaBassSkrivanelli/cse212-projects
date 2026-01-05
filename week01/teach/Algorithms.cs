@@ -42,6 +42,7 @@ public static class Algorithms {
 
         return count;
     }
+ // Answer: O(n) (1 for loop)
 
     /// <summary>
     /// The count variable is keeping track of the amount
@@ -57,6 +58,7 @@ public static class Algorithms {
 
         return count;
     }
+//Answer: O(n^2) nested for
 
     /// <summary>
     /// The count variable is keeping track of the amount
@@ -77,3 +79,11 @@ public static class Algorithms {
         return count;
     }
 }
+//Answer: For divided * 2 = O(log n)
+
+//SECOND ACTIVITY:
+// Question 1: Yes, the results match.
+//Question 2: Algorithm 3 O(log n) has the best performance, while Algorithm 2 has the worst,
+//increasing exponentially to 458.23328 ms.
+//Question 3: It's important to measure on a large scale, since for small values ​​the differences aren't very significant,
+// but when n starts to grow, then the time difference becomes apparent.
