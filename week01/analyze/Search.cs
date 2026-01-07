@@ -43,6 +43,8 @@ public static class Search {
         return count; // Didn't find it
     }
 
+//ANSWER = O(n), 1 Foreach
+
     /// <summary>
     /// Search for 'target' in the list 'data'. When its found (or not found) the variable count which represents
     /// the work done in the function is returned.
@@ -63,3 +65,12 @@ public static class Search {
         return 1 + SearchSorted2(data, target, start, middle - 1);
     }
 }
+//ANSWER = O(log n) divide in half
+
+
+//5. What is the performance using big O notation for each function (based on both your predictions and the actual results)?
+//SearchSorted1 predicted performance and final Big O: O(n), it checks each element one by one until the target is found or until the list ends.
+//SearchSorted2 predicted performance and final Big O: O(log n) it divid the search space in half and grows very slowly.
+
+//Which function has the better performance in the worst case? SearchSorted2  has the better performance in the worst case 
+//because O(log n) grows much more slowly than O(n).

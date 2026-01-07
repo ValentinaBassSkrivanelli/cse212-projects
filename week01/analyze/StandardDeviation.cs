@@ -29,7 +29,7 @@ public static class StandardDeviation {
         var variance = sumSquaredDifferences / count;
         return Math.Sqrt(variance);
     }
-
+//Answer: O(n) = two separated Foreach
     private static double StandardDeviation2(int[] numbers) {
         var sumSquaredDifferences = 0.0;
         var countNumbers = 0;
@@ -49,7 +49,7 @@ public static class StandardDeviation {
         var variance = sumSquaredDifferences / countNumbers;
         return Math.Sqrt(variance);
     }
-
+// Answer = O(n^2) = It has two nested for loops
     private static double StandardDeviation3(int[] numbers) {
         var count = numbers.Length;
         var avg = (double)numbers.Sum() / count;
@@ -62,3 +62,4 @@ public static class StandardDeviation {
         return Math.Sqrt(variance);
     }
 }
+//Answer: O(n) a single For loop and numbers.Sum() = O(n) + foreach O(n) = O(2n) = O(n) (simplified)

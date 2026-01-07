@@ -15,3 +15,11 @@
         }
     }
 }
+
+//ANSWER: O(n^2),  2 nested For
+
+//4: 
+// O(n^2), O(1), O(2^n), O(n log n), O(log n), O(n)
+
+//Order (from best performance to worst performance)
+//O(1),O(log n), O(n), O(n log n), O(n^2),  O(2^n),

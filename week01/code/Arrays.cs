@@ -13,7 +13,16 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        //STEP 1: Create an array of size length
+        double[] result = new double[length];
+        //STEP 2: Run de array from 0 to lenght -1
+        for (int i = 0; i < length; i++)
+        {
+        //STEP 3: For each i, store the value: number * (i + 1)
+        result[i] = number * (i + 1);
+        }
+        //STEP 4: Return the array
+        return result; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +38,21 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        //STEP 1:Determine where two split the data
+        int SplitParts = data.Count - amount;
+
+        //STEP 2:Get the right part (move it to the font):
+         List<int> rightPart = data.GetRange(SplitParts, amount);
+
+        //STEP 3: Get the left part
+        List<int> leftPart = data.GetRange(0, SplitParts);
+
+        //STEP 4: Clear the original list
+        data.Clear();
+
+        //STEP 5: Add the rotated parts into the list
+        data.AddRange(rightPart);
+        data.AddRange(leftPart);
     }
 }
