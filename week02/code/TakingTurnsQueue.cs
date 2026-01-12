@@ -23,7 +23,7 @@ public class TakingTurnsQueue
         var person = new Person(name, turns);
         _people.Enqueue(person);
     }
-
+ 
     /// <summary>
     /// Get the next person in the queue and return them. The person should
     /// go to the back of the queue again unless the turns variable shows that they 
