@@ -160,7 +160,7 @@ public class TakingTurnsQueueTests
         catch (AssertFailedException)
         {
             throw;
-        }
+        } 
         catch (Exception e)
         {
             Assert.Fail(
